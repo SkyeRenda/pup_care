@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pup_care/classes/pet.dart';
-
-Pet doggo = Pet();
 
 class DogList extends StatefulWidget {
   const DogList({Key? key}) : super(key: key);
@@ -12,7 +9,7 @@ class DogList extends StatefulWidget {
 
 class _DogListState extends State<DogList> {
   int amount = 2;
-  int age = doggo.age;
+  int age = 18;
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -56,9 +53,9 @@ class _DogListState extends State<DogList> {
                         Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(doggo.name),
-                            Text(doggo.petSpecies),
+                          children: const [
+                            Text('name'),
+                            Text('petSpecies'),
                           ],
                         ),
                         Text(
