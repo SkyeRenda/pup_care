@@ -1,14 +1,6 @@
-abstract class Medical {
-  String name = 'default medicine name';
-  DateTime frequency = DateTime.now();
-}
+import 'package:pup_care/classes/medicinal.dart';
 
-class Vaccine extends Medical {
-  DateTime lastDate = DateTime.now();
-  DateTime dueTime = DateTime.now();
-}
-
-class Medicine {
+class Medicine extends Medical {
   double dosage = 0;
   double amount = 0;
   DateTime remaining = DateTime.now();

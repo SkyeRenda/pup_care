@@ -1,3 +1,4 @@
+import 'package:pup_care/classes/vaccine.dart';
 import 'breed.dart';
 import 'package:pup_care/classes/medicine.dart';
 
@@ -12,4 +13,5 @@ class Pet {
   String sizeCategory = 'default category';
   double weight = 0.01;
   late List<Medicine> medicineList;
+  late List<Vaccine> vaccineList;
 }
